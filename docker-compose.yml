@@ -1,0 +1,18 @@
+# Build all images and run all containers
+# `docker-compose -f docker-compose-local.yml up --build --force-recreate`
+
+version: '3.5'
+
+services:
+
+  app:
+    container_name: app
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    volumes:
+      - './app:/usr/src'
+    tty: true
+  db:
+    container_name: db
+    image: mongo:3.6-xenial
