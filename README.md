@@ -1,22 +1,5 @@
 # docker-basics
 
-## Config
-###### Python
-The python configuration contains filepaths, filenames, and credentials for connecting to the app database.
-
-```
-config/config.py
-```
-
-## Requirements
-###### Python
-
-The `requirements.txt` file is a list of python packages to install with the docker image.
-
-```
-requirements.txt
-```
-
 ## Docker
 ## Build a single image and run a container
 ###### Build a single docker image with the Dockerfile
@@ -118,3 +101,12 @@ Hello! Basic Dockerized python environment worked correctly.
 ###### Stop
 `docker-compose -f docker-compose.yml stop`
 `docker-compose -f docker-compose.yml rm -f`
+
+### Requirements
+###### Python
+
+The `requirements.txt` file is a list of python packages to install with the docker image.
+
+```
+requirements.txt
+```
